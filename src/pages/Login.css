@@ -1,0 +1,104 @@
+
+/* Full Page Background */
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: none;
+}
+
+/* Floating Wrapper */
+.login-wrapper {
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 100px;
+  width: 100%;
+  max-width: 450px; 
+  display: flex;
+  justify-content: center;
+}
+
+/* Glass Form */
+.glass-form {
+  width: 100%;
+  padding: 80px 30px; 
+  border-radius: 50px 0 50px 0;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px; 
+  color: white;
+  text-align: center;
+}
+
+.glass-form h2 {
+  color: white;
+  margin-bottom: 25px;
+}
+
+.glass-form p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.glass-form a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.glass-form a:hover {
+  color: #388e3c;
+}
+
+/* Inputs */
+.glass-form input {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+/* Button */
+.glass-form button {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #4caf50;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.glass-form button:hover {
+  background: #388e3c;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .login-wrapper {
+    position: static;
+    transform: none;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .glass-form {
+    border-radius: 20px;
+    padding: 70px 25px; 
+  }
+}
