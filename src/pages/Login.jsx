@@ -11,6 +11,7 @@ const navigate = useNavigate();
 
 const handleLogin = async (e) => {
 e.preventDefault();
+console.log("Login Clicked");
 
 try {  
   const res = await axios.post("https://fuzzads-vq44.onrender.com/api/auth/login", {  
