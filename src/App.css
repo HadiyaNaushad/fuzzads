@@ -1,0 +1,12 @@
+/* App container as flex column */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Content area takes remaining space */
+.content {
+  flex: 1;  
+  padding-top: 110px;
+}
