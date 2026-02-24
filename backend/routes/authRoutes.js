@@ -35,8 +35,9 @@ if (!isMatch) return res.json({ success: false, message: "Invalid credentials" }
 const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: "7d" });  
 res.json({ success: true, token, user });
 
-} catch (err) {
-res.status(500).json({ success: false, message: "Server error" });
+} catch (error) {
+  console.log("LOGIN ERROR:", error);
+  res.status(500).json({ message: error.message });
 }
 });
 
